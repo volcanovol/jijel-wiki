@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tahar</title>
+	<style>
+		.container {
+			background-color: #333;
+			padding: 10px;
+			color: #fff;
+		}
+
+		.heading {
+			font-size: 48px;
+			font-weight: bold;
+			text-align: center;
+			margin: 0;
+			padding: 20px 0;
+			letter-spacing: 8px;
+			text-transform: uppercase;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="heading">I'm Sorry</h1>
+	</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Show YouTube Video on Page Load</title>
+	<style>
+		#video-container {
+			width: 640px;
+			height: 360px;
+			margin: 0 auto;
+		}
+	</style>
+	<script>
+		function showVideo() {
+			var videoContainer = document.getElementById('video-container');
+			videoContainer.innerHTML = '<iframe width="640" height="360" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>';
+		}
+	</script>
+</head>
+<body onload="showVideo()">
+	<div id="video-container"></div>
+</body>
+</html>
+
